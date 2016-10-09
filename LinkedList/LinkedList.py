@@ -1,7 +1,4 @@
-class Node(object):
-	def __init__(self, data):
-		self.data = data;
-		self.nextNode = None;
+from Node import Node
 
 class LinkedList(object):
 	def __init__(self):
@@ -39,7 +36,7 @@ class LinkedList(object):
 			previousNode.nextNode = currentNode.nextNode;
 
 	# O(1)
-	def size(self):
+	def sizeOfList(self):
 		return self.size;
 
 	# O(N)
@@ -59,19 +56,3 @@ class LinkedList(object):
 		while actualNode is not None:
 			print("%d " % actualNode.data);
 			actualNode = actualNode.nextNode;
-
-
-
-linkedlist = LinkedList();
-
-linkedlist.insertStart(12);
-linkedlist.insertStart(122);
-linkedlist.insertStart(3);
-linkedlist.insertEnd(31);
-
-linkedlist.traverseList();
-
-linkedlist.remove(3);
-linkedlist.remove(12);
-linkedlist.remove(122);
-linkedlist.remove(31);
