@@ -13,5 +13,3 @@ linkedlist.remove(3);
 linkedlist.remove(12);
 linkedlist.remove(122);
 linkedlist.remove(31);
-
-print('Length of the linkedlist: '.linkedlist.sizeOfList())
